@@ -171,7 +171,11 @@ class Rodal extends React.Component {
 
     return (
       <div
-        style={style}
+        style={{
+          ...style,
+          display: 'flex',
+          alignItems: 'center',
+        }}
         className={cx('rodal', `rodal-fade-${animationType}`, className)}
         onAnimationEnd={this.animationEnd}
         tabIndex="-1"
